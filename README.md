@@ -3,7 +3,7 @@ Our 2020 scouting app, available for all
 
 ## These are the instructions for being able to use our FRC 2020 Scouting App.
 
-This scouting system requires Windows OS, an Android device with internet connectivity, and Excel (This was created on Excel 2016).
+This scouting system requires Windows OS with Excel (This was created on Excel 2016) and an Android device with internet connectivity.
 
 This app was created with event management in mind, meaning it does not use any Wi-Fi, it only uses Ethernet enabled networks,
 (or a flash drive), and a 1-time use app so you do not need a constant internet connection.
