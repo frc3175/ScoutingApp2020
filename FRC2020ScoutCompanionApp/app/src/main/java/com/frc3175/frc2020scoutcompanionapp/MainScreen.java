@@ -14,7 +14,7 @@ import com.thebluealliance.api.v3.*;
 
 public class MainScreen extends AppCompatActivity {
 
-    public static final String authKey = "cJQfMZDk3HKWc2odfpLjhTjUrhvNx2n2PUWx1MZLy3odT9X1mHPm1I5pUjDvhw2Q"; //Insert auth key here
+    public static final String authKey = ""; //Insert auth key here
     public TBA tba;
     private static final int STORAGE_PERMISSION_CODE = 100;
     @Override
