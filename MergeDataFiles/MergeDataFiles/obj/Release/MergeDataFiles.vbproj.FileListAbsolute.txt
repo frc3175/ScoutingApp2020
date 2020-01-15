@@ -1,0 +1,11 @@
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\bin\Release\MergeDataFiles.exe.config
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\bin\Release\MergeDataFiles.exe
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\bin\Release\MergeDataFiles.pdb
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\bin\Release\MergeDataFiles.xml
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\obj\Release\MergeDataFiles.Form1.resources
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\obj\Release\MergeDataFiles.Resources.resources
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\obj\Release\MergeDataFiles.vbproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\obj\Release\MergeDataFiles.vbproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\obj\Release\MergeDataFiles.exe
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\obj\Release\MergeDataFiles.xml
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\obj\Release\MergeDataFiles.pdb

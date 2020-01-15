@@ -1,0 +1,1 @@
+Team|Match|Crossed|AutoLow|AutoHigh|Extra Grabbed|Rendevouz|Trench|TeleLow|TeleHigh|Fouls|Climbed|Level|BalancedWith|Panel2|Panel3|Broken|Comms|Defense|SpotOnBar|Autonomous Notes|TeleOperated Notes|

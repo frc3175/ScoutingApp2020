@@ -1,0 +1,12 @@
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\bin\Debug\MergeDataFiles.exe.config
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\bin\Debug\MergeDataFiles.exe
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\bin\Debug\MergeDataFiles.pdb
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\bin\Debug\MergeDataFiles.xml
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\obj\Debug\MergeDataFiles.vbprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\obj\Debug\MergeDataFiles.Form1.resources
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\obj\Debug\MergeDataFiles.Resources.resources
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\obj\Debug\MergeDataFiles.vbproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\obj\Debug\MergeDataFiles.vbproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\obj\Debug\MergeDataFiles.exe
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\obj\Debug\MergeDataFiles.xml
+C:\Users\Administrator\source\repos\MergeDataFiles\MergeDataFiles\obj\Debug\MergeDataFiles.pdb

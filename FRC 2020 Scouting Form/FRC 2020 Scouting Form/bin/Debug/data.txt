@@ -1,0 +1,4 @@
+Team|Match|Crossed|AutoLow|AutoHigh|Extra Grabbed|Rendevouz|Trench|TeleLow|TeleHigh|Fouls|Climbed|Level|BalancedWith|Panel2|Panel3|Broken|Comms|Defense|SpotOnBar|Autonomous Notes|TeleOperated Notes|
+33|1|0|0|0|0|0|0|0|3|0|1|1|2|1|1|0|0|0|1||ooooo||
+33|1|1|6|8|4|1|1|11|18|1|1|1|2|1|1|1|1|5|1|iaosjdfdoisdasjf|reeeee|
+33|1|0|0|3|0|0|0|0|0|17|0|0|0|0|0|0|0|0|0|||

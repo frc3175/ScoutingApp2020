@@ -1,0 +1,14 @@
+C:\Users\galeaac\Documents\FRC2020\ScoutingApp\FRC 2020 Scouting Form\FRC 2020 Scouting Form\bin\Release\FRC 2020 Scouting Form.exe.config
+C:\Users\galeaac\Documents\FRC2020\ScoutingApp\FRC 2020 Scouting Form\FRC 2020 Scouting Form\bin\Release\FRC 2020 Scouting Form.exe
+C:\Users\galeaac\Documents\FRC2020\ScoutingApp\FRC 2020 Scouting Form\FRC 2020 Scouting Form\bin\Release\FRC 2020 Scouting Form.pdb
+C:\Users\galeaac\Documents\FRC2020\ScoutingApp\FRC 2020 Scouting Form\FRC 2020 Scouting Form\bin\Release\FRC 2020 Scouting Form.xml
+C:\Users\galeaac\Documents\FRC2020\ScoutingApp\FRC 2020 Scouting Form\FRC 2020 Scouting Form\obj\Release\FRC 2020 Scouting Form.vbprojAssemblyReference.cache
+C:\Users\galeaac\Documents\FRC2020\ScoutingApp\FRC 2020 Scouting Form\FRC 2020 Scouting Form\obj\Release\FRC_2020_Scouting_Form.Form1.resources
+C:\Users\galeaac\Documents\FRC2020\ScoutingApp\FRC 2020 Scouting Form\FRC 2020 Scouting Form\obj\Release\FRC_2020_Scouting_Form.auton.resources
+C:\Users\galeaac\Documents\FRC2020\ScoutingApp\FRC 2020 Scouting Form\FRC 2020 Scouting Form\obj\Release\FRC_2020_Scouting_Form.tele.resources
+C:\Users\galeaac\Documents\FRC2020\ScoutingApp\FRC 2020 Scouting Form\FRC 2020 Scouting Form\obj\Release\FRC_2020_Scouting_Form.Resources.resources
+C:\Users\galeaac\Documents\FRC2020\ScoutingApp\FRC 2020 Scouting Form\FRC 2020 Scouting Form\obj\Release\FRC 2020 Scouting Form.vbproj.GenerateResource.cache
+C:\Users\galeaac\Documents\FRC2020\ScoutingApp\FRC 2020 Scouting Form\FRC 2020 Scouting Form\obj\Release\FRC 2020 Scouting Form.vbproj.CoreCompileInputs.cache
+C:\Users\galeaac\Documents\FRC2020\ScoutingApp\FRC 2020 Scouting Form\FRC 2020 Scouting Form\obj\Release\FRC 2020 Scouting Form.exe
+C:\Users\galeaac\Documents\FRC2020\ScoutingApp\FRC 2020 Scouting Form\FRC 2020 Scouting Form\obj\Release\FRC 2020 Scouting Form.xml
+C:\Users\galeaac\Documents\FRC2020\ScoutingApp\FRC 2020 Scouting Form\FRC 2020 Scouting Form\obj\Release\FRC 2020 Scouting Form.pdb
