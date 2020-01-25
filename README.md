@@ -1,5 +1,5 @@
 # ScoutingApp2020
-Our 2020 scouting app, available for all
+[Our 2020 scouting app, available for all](https://github.com/frc3175/ScoutingApp2020/releases)
 
 ## These are the instructions for being able to use our FRC 2020 Scouting App.
 
