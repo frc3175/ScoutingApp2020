@@ -22,7 +22,7 @@ scout has to do what team is taken care of, you just have to assign an alliance 
 
 Another option is to download the [FRC 2020 Scout app onto an Android enabled device](https://play.google.com/store/apps/details?id=com.frc3175.frc2020scout), and scout matches using that. Be aware that you <b>MUST</b> use the companion app first as well to download match schedules, otherwise the app will not work.
 
-If you are using multiple devices, and would like to pull in data, run the MergeDataFiles.txt on the machine you would like the data to  be collected on, then select the file on the non-host device, then merge the files.
+If you are using multiple devices, and would like to pull in data, run the MergeDataFiles.exe on the machine you would like the data to  be collected on, then select the file on the non-host device, and it will merge the files.
 
 Once you have scouted a few matches, you might want to look at data! Open the Excel file, and hit the <b>Load Data</b> button. It will generate individual scouting reports for every team at the event, as well as a full event breakdown. (If you do this before you download match schedules and team list, go to cell B7 on the HOME sheet and change the value from 0 to 1, then re-run the load. Do NOT do that if you have already generated the scouting reports once. The sheets will automatically update.)
 
