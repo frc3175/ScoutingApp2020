@@ -23,7 +23,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="75" />
+                                                <entry key="scalingPercent" value="70" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -33,7 +33,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="foregroundImage" value="C:\Users\galeaac\Documents\FRC2020\scoutingapplogo.PNG" />
+                                      <entry key="foregroundImage" value="C:\Users\galeaac\Documents\ScoutingApplogo.png" />
                                     </map>
                                   </option>
                                 </PersistentState>

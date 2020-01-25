@@ -100,7 +100,7 @@ public class Event {
             FileWriter fw = new FileWriter(file);
             PrintWriter pw = new PrintWriter(fw);
             for (int i=0;i<this.teamList.size();i++) {
-                line = teamList.get(i).toString();
+                line = teamList.get(i).toString() + "\r";
                 pw.println(line);
             }
             pw.close();
@@ -131,7 +131,7 @@ public class Event {
             PrintWriter pw = new PrintWriter(fw);
             for (int i=0;i<this.matchList.size();i++) {
                 if (this.matchList.get(i).compLevel.contains("qm")) {
-                    line = matchList.get(i).exportMatch();
+                    line = matchList.get(i).exportMatch() + "\r";
                     //wrtieFileOnInternalStorage(,"matchlist.txt", line);
                     pw.println(line);
                 }
