@@ -135,6 +135,8 @@ public class TeleOpActivity extends AppCompatActivity {
         return getIntent().getIntExtra("HighAuto", 0);
     }
 
+    public int getInnerGoalsAuto() {return getIntent().getIntExtra("InnerAuto", 0);}
+
     public int getExtraGrabbed() {
         return getIntent().getIntExtra("ExtraGrab", 0);
     }
@@ -252,8 +254,11 @@ public class TeleOpActivity extends AppCompatActivity {
     }
 
     public void submitMatch(View view) {
+        Intent endIntent = new Intent(this, EndgameActivity.class);
+        startActivity(endIntent);
+        //Export File
         String data = this.matchNo+'|'+this.team+"|";
-        data+=getCrossed()+"|"+getLowGoalsAuto()+"|"+getHighGoalsAuto()+"|"+getExtraGrabbed()+"|";
+        data+=getCrossed()+"|"+getLowGoalsAuto()+"|"+getHighGoalsAuto()+"|" + getInnerGoalsAuto() +"|"+getExtraGrabbed()+"|";
         data+=getRendes()+"|"+getTrench()+"|"+getLowGoalsTele()+"|"+getHighGoalsTele()+"|";
         data+=getFouls()+"|"+getClimbed()+"|"+getLevel()+"|"+getTeamsBalancedWith()+"|"+getCpS2()+'|'+getCpS3()+"|";
         data+=getBroken()+"|"+getComms()+"|"+getDefense()+"|"+getSpotOnBar()+"|"+getAutoNotes()+"|"+getTeleNotes()+"|";
