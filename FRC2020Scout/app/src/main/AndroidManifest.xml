@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.frc3175.frc2020scout">
+    package="com.frc3175.frc2020scouting">
 
     <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
@@ -14,7 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.frc3175.frc2020scouting.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,9 +22,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".AutonomousScout" />
-        <activity android:name=".TeleOpActivity" />
-        <activity android:name=".DefenseInstructions" />
-        <activity android:name=".EndgameActivity"></activity>
+        <activity android:name="com.frc3175.frc2020scouting.TeleOpActivity" />
+        <activity android:name="com.frc3175.frc2020scouting.DefenseInstructions" />
+        <activity android:name="com.frc3175.frc2020scouting.EndgameActivity"></activity>
     </application>
 
 </manifest>

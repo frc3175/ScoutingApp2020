@@ -113,7 +113,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtBalancedWith" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/teleNotesEnd"
         android:layout_width="364dp"
         android:layout_height="202dp"
         android:layout_marginBottom="8dp"
@@ -132,7 +132,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:text="TeleOp Notes"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintBottom_toTopOf="@+id/teleNotesEnd"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -143,6 +143,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:text="Submit end Game"
+        android:onClick="submitMatch"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

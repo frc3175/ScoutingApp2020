@@ -1,4 +1,4 @@
-package com.frc3175.frc2020scout;
+package com.frc3175.frc2020scouting;
 
 import android.Manifest;
 import android.content.Intent;
@@ -10,14 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
-import android.widget.SeekBar;
 import android.widget.Spinner;
-import android.widget.Switch;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 import java.io.File;
 import java.io.IOException;

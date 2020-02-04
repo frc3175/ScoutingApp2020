@@ -1,4 +1,4 @@
-package com.frc3175.frc2020scout;
+package com.frc3175.frc2020scouting;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

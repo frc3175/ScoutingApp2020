@@ -1,7 +1,6 @@
-package com.frc3175.frc2020scout;
+package com.frc3175.frc2020scouting;
 
 import android.content.Intent;
-import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,12 +8,6 @@ import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
 
 public class TeleOpActivity extends AppCompatActivity {
     String matchNo;
@@ -74,7 +67,26 @@ public class TeleOpActivity extends AppCompatActivity {
         }
         lowTele.setText(count.toString());
     }
+    public void addInnerTele(View view) {
+        TextView highTele = (TextView) findViewById(R.id.txtInnerPortCountTele);
+        String countString = highTele.getText().toString();
+        Integer count = Integer.parseInt(countString);
+        if (count < 10) {
+            count++;
+        }
+        highTele.setText(count.toString());
+    }
+    public void subInnerTele(View view) {
+        TextView highTele = (TextView) findViewById(R.id.txtInnerPortCountTele);
+        String countString = highTele.getText().toString();
+        Integer count = Integer.parseInt(countString);
+        if (count > 0) {
+            count--;
+        }
+        highTele.setText(count.toString());
+    }
 
+/*
     public void subBalanced(View view) {
         TextView balance = (TextView) findViewById(R.id.txtBalancedWith);
         String countString = balance.getText().toString();
@@ -93,6 +105,7 @@ public class TeleOpActivity extends AppCompatActivity {
         }
         balance.setText(count.toString());
     }
+*/
 
     public void subFouls(View view) {
         TextView fouls = (TextView) findViewById(R.id.txtFoulCount);
@@ -165,6 +178,12 @@ public class TeleOpActivity extends AppCompatActivity {
         TextView highGoals = (TextView) findViewById(R.id.txtHighGoalCountTele);
         return Integer.parseInt(highGoals.getText().toString());
     }
+
+    public int getInnerGoalsTele() {
+        TextView highGoals = (TextView) findViewById(R.id.txtInnerPortCountTele);
+        return Integer.parseInt(highGoals.getText().toString());
+    }
+
 
     public int getFouls() {
         TextView fouls = (TextView) findViewById(R.id.txtFoulCount);
@@ -255,8 +274,33 @@ public class TeleOpActivity extends AppCompatActivity {
 
     public void submitMatch(View view) {
         Intent endIntent = new Intent(this, EndgameActivity.class);
+        //Match info
+        endIntent.putExtra("teamMatch" ,this.team);
+        endIntent.putExtra("matchNo", this.matchNo);
+        //Autonomous feed in
+        endIntent.putExtra("Crossed", getCrossed());
+        endIntent.putExtra("Rendevouz", getRendes());
+        endIntent.putExtra("Trench", getTrench());
+        endIntent.putExtra("LowAuto", getLowGoalsAuto());
+        endIntent.putExtra("HighAuto",getHighGoalsAuto());
+        endIntent.putExtra("InnerAuto", getInnerGoalsAuto());
+        endIntent.putExtra("ExtraGrab",getExtraGrabbed());
+        endIntent.putExtra("Rendevouz", getRendes());
+        endIntent.putExtra("Trench", getTrench());
+        endIntent.putExtra("LowTele", getLowGoalsTele());
+        endIntent.putExtra("HighTele", getHighGoalsTele());
+        endIntent.putExtra("InnerTele", getInnerGoalsTele());
+        endIntent.putExtra("Fouls", getFouls());
+        endIntent.putExtra("ControlPanel2", getCpS2());
+        endIntent.putExtra("ControlPanel3", getCpS3());
+        endIntent.putExtra("Broken", getBroken());
+        endIntent.putExtra("Comms", getComms());
+        endIntent.putExtra("Defense", getDefense());
+        endIntent.putExtra("AutoNotes", getAutoNotes());
+        endIntent.putExtra("TeleNotes", getTeleNotes());
         startActivity(endIntent);
-        //Export File
+        finish();
+        /*//Export File
         String data = this.matchNo+'|'+this.team+"|";
         data+=getCrossed()+"|"+getLowGoalsAuto()+"|"+getHighGoalsAuto()+"|" + getInnerGoalsAuto() +"|"+getExtraGrabbed()+"|";
         data+=getRendes()+"|"+getTrench()+"|"+getLowGoalsTele()+"|"+getHighGoalsTele()+"|";
@@ -281,7 +325,7 @@ public class TeleOpActivity extends AppCompatActivity {
             myToast.show();
             e.printStackTrace();
         }
-
+        */
 
     }
 }

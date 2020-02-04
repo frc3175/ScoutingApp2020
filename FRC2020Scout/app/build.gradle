@@ -3,11 +3,11 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.frc3175.frc2020scout"
+        applicationId "com.frc3175.frc2020scouting"
         minSdkVersion 23
         targetSdkVersion 28
         versionCode 4
-        versionName "2020.1.0.3"
+        versionName "2020.1.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
