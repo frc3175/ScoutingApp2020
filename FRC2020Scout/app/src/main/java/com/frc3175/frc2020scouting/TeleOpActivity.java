@@ -34,9 +34,7 @@ public class TeleOpActivity extends AppCompatActivity {
         TextView highTele = (TextView) findViewById(R.id.txtHighGoalCountTele);
         String countString = highTele.getText().toString();
         Integer count = Integer.parseInt(countString);
-        if (count < 10) {
-            count++;
-        }
+        count++;
         highTele.setText(count.toString());
     }
     public void subHighTele(View view) {
@@ -53,9 +51,7 @@ public class TeleOpActivity extends AppCompatActivity {
         TextView lowTele = (TextView) findViewById(R.id.txtLowGoalCountTele);
         String countString = lowTele.getText().toString();
         Integer count = Integer.parseInt(countString);
-        if (count < 10) {
-            count++;
-        }
+        count++;
         lowTele.setText(count.toString());
     }
     public void subLowTele(View view) {
@@ -71,9 +67,8 @@ public class TeleOpActivity extends AppCompatActivity {
         TextView highTele = (TextView) findViewById(R.id.txtInnerPortCountTele);
         String countString = highTele.getText().toString();
         Integer count = Integer.parseInt(countString);
-        if (count < 10) {
             count++;
-        }
+
         highTele.setText(count.toString());
     }
     public void subInnerTele(View view) {

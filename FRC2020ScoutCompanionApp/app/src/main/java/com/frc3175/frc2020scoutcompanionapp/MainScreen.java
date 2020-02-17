@@ -19,7 +19,7 @@ public class MainScreen extends AppCompatActivity {
     private static final int STORAGE_PERMISSION_CODE = 100;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE, STORAGE_PERMISSION_CODE);
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
         super.onCreate(savedInstanceState);
@@ -35,7 +35,7 @@ public class MainScreen extends AppCompatActivity {
     }
 
     protected boolean getData(String eventKey) {
-        checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE, STORAGE_PERMISSION_CODE);
+
         Event newEvent = new Event(tba, eventKey);
         boolean success = newEvent.genMatchList();
         didWork2(newEvent.printTeamList(), newEvent);
