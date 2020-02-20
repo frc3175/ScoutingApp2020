@@ -1,4 +1,4 @@
-package com.frc3175.frc2020scoutcompanionapp;
+package com.frc3175.scout2020;
 
 import org.junit.Test;
 

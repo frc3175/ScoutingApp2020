@@ -5,7 +5,7 @@ android {
     }
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.frc3175.frc2020scoutcompanionapp"
+        applicationId "com.frc3175.scoutcompanionapp"
         minSdkVersion 23
         targetSdkVersion 28
         versionCode 3

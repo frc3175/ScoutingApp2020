@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.frc3175.frc2020scouting"
+        applicationId "com.frc3175.scout2020"
         minSdkVersion 23
         targetSdkVersion 28
         versionCode 4

@@ -1,4 +1,4 @@
-package com.frc3175.frc2020scouting;
+package com.frc3175.scout2020;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

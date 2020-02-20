@@ -1,4 +1,4 @@
-package com.frc3175.frc2020scoutcompanionapp;
+package com.frc3175.scoutcompanionapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.frc3175.frc2020scoutcompanionapp", appContext.getPackageName());
+        assertEquals("com.frc3175.scoutcompanionapp", appContext.getPackageName());
     }
 }

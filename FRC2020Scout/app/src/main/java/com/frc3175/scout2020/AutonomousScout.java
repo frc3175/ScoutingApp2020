@@ -1,4 +1,4 @@
-package com.frc3175.frc2020scouting;
+package com.frc3175.scout2020;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
 
-import com.frc3175.frc2020scouting.R;
+import com.frc3175.scout2020.R;
 
 public class AutonomousScout extends AppCompatActivity {
     String team;
