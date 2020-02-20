@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.frc3175.scoutcompanionapp.Event;
 import com.thebluealliance.api.v3.*;
 
 public class MainScreen extends AppCompatActivity {

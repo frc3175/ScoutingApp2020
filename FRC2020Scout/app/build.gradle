@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\galeaac\\Documents\\AppKeys\\AppKeyScout.jks')
+            keyAlias = 'key0'
+            storePassword 'Michigan2'
+            keyPassword 'Michigan2'
+        }
+    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.frc3175.scout2020"
@@ -9,6 +17,7 @@ android {
         versionCode 4
         versionName "2020.1.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.release
     }
     buildTypes {
         release {
