@@ -1,4 +1,4 @@
-package com.frc3175.frc2020scoutcompanionapp;
+package com.frc3175.scoutcompanionapp;
 
 import com.thebluealliance.api.v3.models.SimpleMatch;
 

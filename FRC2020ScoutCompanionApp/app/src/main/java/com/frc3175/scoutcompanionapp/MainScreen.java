@@ -1,4 +1,4 @@
-package com.frc3175.frc2020scoutcompanionapp;
+package com.frc3175.scoutcompanionapp;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.frc3175.scoutcompanionapp.Event;
 import com.thebluealliance.api.v3.*;
 
 public class MainScreen extends AppCompatActivity {
@@ -19,23 +20,28 @@ public class MainScreen extends AppCompatActivity {
     private static final int STORAGE_PERMISSION_CODE = 100;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_screen);
+        checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE, STORAGE_PERMISSION_CODE);
         this.tba = new TBA(authKey);
     }
 
     public void downloadMatch(View view) {
+        try {
             TextView eCodeView = (TextView) findViewById(R.id.editText);
             Toast myToast;
-            String eventKey =  eCodeView.getText().toString();
+            String eventKey = eCodeView.getText().toString();
             didWork(getData(eventKey));
+        }
+            catch(Exception e) {
+            e.printStackTrace();
+            }
     }
 
     protected boolean getData(String eventKey) {
-        checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE, STORAGE_PERMISSION_CODE);
+
         Event newEvent = new Event(tba, eventKey);
         boolean success = newEvent.genMatchList();
         didWork2(newEvent.printTeamList(), newEvent);

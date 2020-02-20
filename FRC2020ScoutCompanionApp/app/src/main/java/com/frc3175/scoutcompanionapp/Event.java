@@ -1,6 +1,5 @@
-package com.frc3175.frc2020scoutcompanionapp;
+package com.frc3175.scoutcompanionapp;
 
-import android.content.Context;
 import android.os.Environment;
 
 import com.thebluealliance.api.v3.TBA;

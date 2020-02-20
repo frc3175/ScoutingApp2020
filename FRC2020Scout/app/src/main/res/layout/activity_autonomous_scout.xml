@@ -6,31 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".AutonomousScout">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="High Goal"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switchCrossed" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Low Goal"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtHighGoalCountAuto" />
+    <Button
+        android:id="@+id/btnAddInnerAuto"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:text="+"
+        android:textStyle="bold"
+        android:onClick="addInnerAuto"
+        app:layout_constraintStart_toEndOf="@+id/txtCountInnerAuto"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/teamTitle"
@@ -107,26 +93,22 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="High Goal"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="54dp"
+        android:text="Outer Port"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switchCrossed" />
 
     <TextView
         android:id="@+id/txtHighGoalCountAuto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
         android:text="0"
         android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddHighAuto"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <Button
@@ -144,21 +126,21 @@
         android:id="@+id/btnAddHighAuto"
         android:layout_width="52dp"
         android:layout_height="52dp"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="4dp"
-        android:text="+"
+        android:layout_marginEnd="8dp"
         android:onClick="addHighAuto"
-        app:layout_constraintStart_toEndOf="@+id/txtHighGoalCountAuto"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Low Goal"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="Bottom Port"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -168,25 +150,25 @@
         android:id="@+id/btnSubLowAuto"
         android:layout_width="52dp"
         android:layout_height="52dp"
-        android:layout_marginEnd="24dp"
         android:layout_marginTop="4dp"
-        android:text="-"
+        android:layout_marginEnd="20dp"
         android:onClick="subLowAuto"
+        android:text="-"
         app:layout_constraintEnd_toStartOf="@+id/txtLowGoalCountAuto"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
         android:id="@+id/txtLowGoalCountAuto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
         android:text="0"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <Button
         android:id="@+id/button2"
@@ -194,10 +176,10 @@
         android:layout_height="52dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="4dp"
-        android:text="+"
         android:onClick="addLowAuto"
+        android:text="+"
         app:layout_constraintStart_toEndOf="@+id/txtLowGoalCountAuto"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
         android:id="@+id/textView6"
@@ -288,10 +270,10 @@
     <EditText
         android:id="@+id/txtNotesAuto"
         android:layout_width="290dp"
-        android:layout_height="121dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_height="75dp"
         android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:ems="10"
         android:inputType="textMultiLine"
         app:layout_constraintBottom_toTopOf="@+id/textView11"
@@ -309,5 +291,39 @@
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSubInnerAuto"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="-"
+        android:textStyle="bold"
+        android:onClick="subInnerAuto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="4dp"
+        android:text="Inner Port"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchCrossed" />
+
+    <TextView
+        android:id="@+id/txtCountInnerAuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/btnSubInnerAuto"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 </android.support.constraint.ConstraintLayout>

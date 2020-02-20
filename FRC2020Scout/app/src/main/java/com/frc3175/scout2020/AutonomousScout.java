@@ -1,4 +1,4 @@
-package com.frc3175.frc2020scout;
+package com.frc3175.scout2020;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
+
+import com.frc3175.scout2020.R;
 
 public class AutonomousScout extends AppCompatActivity {
     String team;
@@ -86,6 +88,25 @@ public class AutonomousScout extends AppCompatActivity {
         extraAuto.setText(count.toString());
     }
 
+    public void subInnerAuto(View view) {
+        TextView innerAuto = (TextView) findViewById(R.id.txtCountInnerAuto);
+        String countString = innerAuto.getText().toString();
+        Integer count = Integer.parseInt(countString);
+        if (count > 0) {
+            count--;
+        }
+        innerAuto.setText(count.toString());
+    }
+    public void addInnerAuto(View view) {
+        TextView innerAuto = (TextView) findViewById(R.id.txtCountInnerAuto);
+        String countString = innerAuto.getText().toString();
+        Integer count = Integer.parseInt(countString);
+        if (count < 10) {
+            count++;
+        }
+        innerAuto.setText(count.toString());
+    }
+
 
     public void submitAuto(View view) {
         Intent teleIntent = new Intent(this, TeleOpActivity.class);
@@ -101,6 +122,8 @@ public class AutonomousScout extends AppCompatActivity {
         teleIntent.putExtra("LowAuto", Integer.parseInt(lowGoals.getText().toString()));
         TextView highGoals = (TextView) findViewById(R.id.txtHighGoalCountAuto);
         teleIntent.putExtra("HighAuto",Integer.parseInt(highGoals.getText().toString()));
+        TextView innerGoals = (TextView) findViewById(R.id.txtCountInnerAuto);
+        teleIntent.putExtra("InnerAuto",Integer.parseInt(innerGoals.getText().toString()));
         TextView extraGrab = (TextView) findViewById(R.id.txtExtraCountAuto);
         teleIntent.putExtra("ExtraGrab",Integer.parseInt(extraGrab.getText().toString()));
         EditText autoNotes = (EditText) findViewById(R.id.txtNotesAuto);

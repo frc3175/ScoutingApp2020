@@ -1,4 +1,4 @@
-package com.frc3175.frc2020scout;
+package com.frc3175.scout2020;
 
 import android.Manifest;
 import android.content.Intent;
@@ -10,14 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
-import android.widget.SeekBar;
 import android.widget.Spinner;
-import android.widget.Switch;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 import java.io.File;
 import java.io.IOException;
@@ -86,18 +80,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startMatch(View view) {
-        int matchSelect = s.getSelectedItemPosition();
-        int allianceStation = s2.getSelectedItemPosition();
-        this.teamMatch = matches.get(matchSelect).teams[allianceStation];
-        this.matchNo = matches.get(matchSelect).matchNum;
-        Intent autonIntent = new Intent(this, AutonomousScout.class);
-        autonIntent.putExtra("teamMatch" ,teamMatch);
-        autonIntent.putExtra("matchNo", matchNo);
-        startActivity(autonIntent);
-        if (matchSelect < s.getAdapter().getCount()-1) {
-            s.setSelection(matchSelect + 1);
+        try {
+            int matchSelect = s.getSelectedItemPosition();
+            int allianceStation = s2.getSelectedItemPosition();
+            this.teamMatch = matches.get(matchSelect).teams[allianceStation];
+            this.matchNo = matches.get(matchSelect).matchNum;
+            Intent autonIntent = new Intent(this, AutonomousScout.class);
+            autonIntent.putExtra("teamMatch", teamMatch);
+            autonIntent.putExtra("matchNo", matchNo);
+            startActivity(autonIntent);
+            if (matchSelect < s.getAdapter().getCount() - 1) {
+                s.setSelection(matchSelect + 1);
+            }
+            //Start autons
+        } catch (ArrayIndexOutOfBoundsException e) {
+            Toast myToast = Toast.makeText(this, "No matchlist.txt file found. Please download the companion app in order to proceed.", Toast.LENGTH_SHORT);
+            myToast.show();
         }
-        //Start autons
     }
 
 }
