@@ -26,8 +26,6 @@ If you are using multiple devices, and would like to pull in data, run the Merge
 
 Once you have scouted a few matches, you might want to look at data! Open the Excel file, and hit the <b>Load Data</b> button. It will generate individual scouting reports for every team at the event, as well as a full event breakdown. (If you do this before you download match schedules and team list, go to cell B7 on the HOME sheet and change the value from 0 to 1, then re-run the load. Do NOT do that if you have already generated the scouting reports once. The sheets will automatically update.)
 
-The <b>Match Planning</b> tab allows you to look at what your scouting data says what the probable output of a match is (match scores is a very crude estimate (and very well could be way off, do not take it for gospel) by seeing the current scoring averages of every team in the match.
-
 I recommend using the <b>Event Data</b> tab to help you plan your alliance selection, it has sorts for Averages, MAX, MIN, Median, and 
 standard deviation for stats where it is applicable, and allows you to filter out teams that have been selected as alliance selection 
 progresses.
