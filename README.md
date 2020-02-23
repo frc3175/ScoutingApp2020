@@ -12,7 +12,7 @@ Download the "FRC 2020 Scouting App Companion" app from the Google Play Store on
 
 Find your event key on The Blue Alliance (Tip: Go to the event page, and the characters after "/event/" in the URL are the event key.)
 
-Put the event key into the [FRC 2020 Scouting App Companion](https://play.google.com/store/apps/details?id=com.frc3175.frc2020scoutcompanionapp) and hit "Download Match Schedules". Give the app permission to write to storage. If it says "Success!", you are good to go!
+Put the event key into the [FRC 2020 Scouting App Companion](https://play.google.com/store/apps/details?id=com.frc3175.scoutcompanionapp) and hit "Download Match Schedules". Give the app permission to write to storage. If it says "Success!", you are good to go!
 
 Connect the Android device to the lead scout laptop, and extract the files generated from the Documents/FRC2020Scout folder, and 
 place them in the home directory (/FRC 2020 Scouting App/).
@@ -20,7 +20,7 @@ place them in the home directory (/FRC 2020 Scouting App/).
 Once these things are done, you may begin scouting! Open up the "FRC 2020 Scouting Form.exe" file, and all the work of figuring out what
 scout has to do what team is taken care of, you just have to assign an alliance station to them, and it tells them what robot to scout, and it auto counts to the next match. (It allows you to change for new days of scouting as well as in case of a replay).
 
-Another option is to download the [FRC 2020 Scout app onto an Android enabled device](https://play.google.com/store/apps/details?id=com.frc3175.frc2020scout), and scout matches using that. Be aware that you <b>MUST</b> use the companion app first as well to download match schedules, otherwise the app will not work.
+Another option is to download the [FRC 2020 Scout app onto an Android enabled device](https://play.google.com/store/apps/details?id=com.frc3175.scout2020), and scout matches using that. Be aware that you <b>MUST</b> use the companion app first as well to download match schedules, otherwise the app will not work.
 
 If you are using multiple devices, and would like to pull in data, run the MergeDataFiles.exe on the machine you would like the data to  be collected on, then select the file on the non-host device, and it will merge the files.
 
